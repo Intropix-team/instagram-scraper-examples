@@ -40,9 +40,9 @@ node node/scrape-posts.mjs natgeo
 
 `username`, `user_pk`, `full_name`, `is_verified`, `is_private`, `story_pk`, `taken_at`, `expiring_at`, `media_type`, `media_url`, `video_duration`, `is_paid_partnership`, `attribution_url`, `width`, `height`, `caption`, `link_urls`, `hashtags`, `mentions`, `music_title`, `music_artist`, `coauthors`
 
-**Posts and reels**, one dataset item per post, fixed 19 fields (a carousel is one item with every slide nested under `media`):
+**Posts and reels**, one dataset item per post, fixed 24 fields (a carousel is one item with every slide nested under `media`):
 
-`username`, `user_pk`, `full_name`, `is_verified`, `is_private`, `post_pk`, `shortcode`, `permalink`, `post_type`, `taken_at`, `caption`, `like_count`, `comment_count`, `view_count`, `is_paid_partnership`, `coauthors`, `hashtags`, `mentions`, `media[]`
+`username`, `user_pk`, `full_name`, `is_verified`, `is_private`, `follower_count`, `following_count`, `profile_pic_url`, `biography`, `post_pk`, `shortcode`, `permalink`, `post_type`, `taken_at`, `caption`, `like_count`, `comment_count`, `view_count`, `is_paid_partnership`, `is_off_grid`, `coauthors`, `hashtags`, `mentions`, `media[]`
 
 Notes:
 
