@@ -49,7 +49,9 @@ Notes:
 - `media_url` (stories) and each slide's `media_url` (posts) are direct CDN links to the full-resolution file; links expire, so download in the same job if you want the file.
 - Stories die 24h after posting: `expiring_at` is your download deadline.
 - `story_pk` / `post_pk` are stable numeric IDs; use them for dedup.
-- Posts `like_count`, `comment_count`, `view_count` are null where Instagram hides them.
+- Posts `like_count` and `comment_count` are null where Instagram hides them. `view_count` is a play count on reels and videos; photos and carousels have none, so it is null there rather than a misleading zero.
+- `profile_pic_url` is the account's picture at the best resolution Instagram returns, and expires like the media links. `biography` is the profile bio as written.
+- `is_off_grid` marks a reel that was not on the profile grid the run read, including trial reels. Opt in with `includeOffGridReels`; the field is present either way.
 - Failed lookups (typos, deleted accounts) are never charged.
 
 ## Pricing
