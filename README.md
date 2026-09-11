@@ -51,7 +51,7 @@ Notes:
 - `story_pk` / `post_pk` are stable numeric IDs; use them for dedup.
 - Posts `like_count` and `comment_count` are null where Instagram hides them. `view_count` is a play count on reels and videos; photos and carousels have none, so it is null there rather than a misleading zero.
 - `profile_pic_url` is the account's picture at the best resolution Instagram returns, and expires like the media links. `biography` is the profile bio as written.
-- `is_off_grid` marks a reel that was not on the profile grid the run read, including trial reels. Opt in with `includeOffGridReels`; the field is present either way.
+- `is_off_grid` marks a reel that was not on the profile grid the run read. Opt in with `includeOffGridReels`; the field is present either way. Note that Instagram trial reels are currently not listed at all and so are not returned by this option.
 - Failed lookups (typos, deleted accounts) are never charged.
 
 ## Pricing
