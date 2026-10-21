@@ -78,6 +78,8 @@ Notes:
 - **Location:** `location_name`, `location_city`, `location_lat`, `location_lng`, `location_id`.
 - **Business profile:** `owner_account_type`, `owner_category`, `owner_website`, `owner_bio_links`, `owner_post_count`, and `owner_public_email`, `owner_public_phone`, `owner_city`, `owner_address` only where the profile shows them publicly.
 
+If captions, likes, comments, views and dates are all you need, the standard [Instagram Posts & Reels Scraper](https://apify.com/intropix/instagram-posts-reels-scraper) returns those at $1.90 per 1,000 posts. Its 24 fields are the first 24 of the PRO schema with the same names, and both take the same input, so code that reads only those fields works with either actor.
+
 ## Pricing
 
 Pay-per-event, no subscription:
