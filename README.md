@@ -23,6 +23,8 @@ Every example needs an Apify API token: free account at [apify.com](https://apif
 | [`python/business_leads_to_csv.py`](python/business_leads_to_csv.py) | PRO: one row per account with category, website and public contact details, write `leads.csv` |
 | [`node/scrape-posts-pro.mjs`](node/scrape-posts-pro.mjs) | PRO: zero-dependency Node 18+ version using the REST API |
 
+Two standalone command-line tools are built on the same actors: [instagram-story-archiver](https://github.com/Intropix-team/instagram-story-archiver) saves stories to dated folders with JSONL and CSV metadata, and [instagram-brand-deals-tracker](https://github.com/Intropix-team/instagram-brand-deals-tracker) finds sponsored posts and ranks sponsor brands.
+
 ## Quick start
 
 ```bash
