@@ -69,7 +69,7 @@ Notes:
 - Posts `like_count` and `comment_count` are null where Instagram hides them. `view_count` is a play count on reels and videos; photos and carousels have none, so it is null there rather than a misleading zero.
 - `profile_pic_url` is the account's picture at the best resolution Instagram returns, and expires like the media links. `biography` is the profile bio as written.
 - `is_off_grid` marks a reel that was not on the profile grid the run read. Opt in with `includeOffGridReels`; the field is present either way. Instagram trial reels are a separate case and are not returned: Instagram shows them only to the reel's author, so they are in no account listing a scraper can read.
-- `maxPosts` is one total for the whole run, filled account by account in input order. To get N posts from every account, run once per account (as `brand_deals_to_csv.py` and `business_leads_to_csv.py` do) or use date bounds.
+- `maxPosts` is one total for the whole run, filled account by account in input order. To get N posts from every account, set `maxPostsPerAccount` instead (it replaces `maxPosts` for the usernames), run once per account (as `brand_deals_to_csv.py` and `business_leads_to_csv.py` do), or use date bounds.
 - Failed lookups (typos, deleted accounts) are never charged.
 
 ### PRO field highlights
@@ -91,6 +91,14 @@ Pay-per-event, no subscription:
 - **PRO posts and reels:** $0.005 per run start, $0.002 per profile scanned, $0.0039 per post delivered (a carousel is one post). From $3.90 per 1,000 posts. Optional partner enrichment is $0.005 per enriched profile.
 
 Full details on each actor page ([stories](https://apify.com/intropix/instagram-stories-scraper), [posts](https://apify.com/intropix/instagram-posts-reels-scraper), [PRO posts](https://apify.com/intropix/instagram-posts-reels-scraper-pro)).
+
+## AI agent skills
+
+[instagram-scraper-skills](https://github.com/Intropix-team/instagram-scraper-skills) packages these actors as agent skills. Ask your coding agent to "save today's stories from natgeo", "download the last 10 reels from nike" or "audit adidas's Instagram" and it picks the right actor, runs it in your Apify account, downloads the media and writes the CSV. Install in any agent that reads skills:
+
+```bash
+npx skills add Intropix-team/instagram-scraper-skills
+```
 
 ## No-code and other integrations
 
