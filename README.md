@@ -88,7 +88,7 @@ Pay-per-event, no subscription:
 
 - **Stories:** $0.005 per run start, $0.002 per profile scanned, $0.0025 per story delivered. From $2.50 per 1,000 stories.
 - **Posts and reels:** $0.005 per run start, $0.002 per profile scanned, $0.0019 per post delivered (a carousel is one post). From $1.90 per 1,000 posts.
-- **PRO posts and reels:** $0.005 per run start, $0.002 per profile scanned, $0.0039 per post delivered (a carousel is one post). From $3.90 per 1,000 posts. Optional partner enrichment is $0.005 per enriched profile.
+- **PRO posts and reels:** $0.005 per run start, $0.002 per profile scanned, $0.0029 per post delivered (a carousel is one post). From $2.90 per 1,000 posts. Optional partner enrichment is $0.0035 per enriched profile.
 
 Full details on each actor page ([stories](https://apify.com/intropix/instagram-stories-scraper), [posts](https://apify.com/intropix/instagram-posts-reels-scraper), [PRO posts](https://apify.com/intropix/instagram-posts-reels-scraper-pro)).
 

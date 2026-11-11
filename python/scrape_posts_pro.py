@@ -11,7 +11,7 @@ Usage:
 Optional env vars:
     SINCE_DATE=2026-10-01 UNTIL_DATE=2026-10-31   date bounds (YYYY-MM-DD, UTC)
     ENRICH_PARTNERS=1   add a profile summary of every co-author and sponsor
-                        brand ($0.005 per enriched profile, paid plans only)
+                        brand ($0.0035 per enriched profile, paid plans only)
 
 Note: maxPosts is ONE total for the whole run, filled account by account in
 input order, so with several usernames the first account can use it all.

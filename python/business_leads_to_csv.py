@@ -12,7 +12,7 @@ Usage:
 Cost: one run per account (maxPosts is one total per run, filled account by
 account, so a single run with maxPosts 1 would return only the first
 account). Each account costs about $0.005 run start + $0.002 profile scan +
-$0.0039 post = $0.0109.
+$0.0029 post = $0.0099.
 
 Lawful basis: contact details here are only what each profile shows to any
 visitor, but they can still be personal data (a sole trader's email, a

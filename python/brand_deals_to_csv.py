@@ -15,7 +15,7 @@ Optional env vars:
 
 Each account gets its own run, because maxPosts is one total per run filled
 account by account in input order. Every post read is billed, sponsored or
-not: about $0.0039 per post, plus $0.002 per account and $0.005 per run.
+not: about $0.0029 per post, plus $0.002 per account and $0.005 per run.
 
 Requires: pip install apify-client
 """
